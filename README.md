@@ -14,8 +14,9 @@ CLI tool should accept 4 options (short alias and full name):
 2. git clone https://github.com/DimaKukhta/caesar-cipher-cli.git
 3. cd caesar-cipher-cli
 4. git checkout develop
-5. npm install
-6. npm install -g .
+5. cd caesar 
+6. npm install
+7. npm install -g .
 ### Now you can use cli tool, several commands: ###
 
 1. caesar-crypt -a encode -s 7 -i "./input.txt" -o "./output.txt"
