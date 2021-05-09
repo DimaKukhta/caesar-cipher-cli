@@ -10,4 +10,4 @@ error(action, shift, input, output);
 const readStream = input ? fs.createReadStream(__dirname + '\\..\\' + input, { encoding: 'utf-8' }) : process.stdin;
 const writeStream = output ? fs.createWriteStream(__dirname + '\\..\\' + output, { encoding: 'utf-8', flags: 'a' }) : process.stdout;
 
-cli(readStream, writeStream, transormStream, action, shift);
+cli(readStream, writeStream, transormStream);
