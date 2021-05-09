@@ -6,6 +6,11 @@ const error = (action, shift, input, output) => {
         process.exit(1);
     }
 
+    if (input === output) {
+        process.stderr.write('Error: Input file and Output file have the same name');
+        process.exit(1);
+    }
+
     if (input) {
         fs.access(input, fs.F_OK, (err) => {
             if (err) {
